@@ -586,7 +586,7 @@ main {
 
     .blogs {
         position: relative;
-        right: 45px;
+        right: 20px;
     }
 
     .nav-container {
@@ -616,7 +616,7 @@ main {
 
     .match-sec {
         position: relative;
-        right: 45px;
+        right: 5px;
     }
 
     .container {
@@ -642,7 +642,7 @@ main {
 
     .groups {
         position: relative;
-        right: 50px;
+        right: 5px;
     }
 
     /*======== media quary for tab end ========= */

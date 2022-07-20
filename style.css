@@ -1,9 +1,619 @@
 * {
     margin: 0px;
     padding: 0px;
+    box-sizing: border-box;
 }
 
 /* font-family: 'Lobster', cursive; */
 body {
     font-family: 'Poppins', sans-serif;
+
 }
+
+main {
+    margin-left: 290px;
+    display: flex;
+}
+
+.advertise {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 1321px;
+    height: 646px;
+    background: #161616;
+    border-radius: 30px;
+    margin: 50px 290px;
+}
+
+.advertise-sec {
+    margin-left: 160px;
+}
+
+/*============== advertise title with animation  */
+
+.advertise-title {
+    font-family: 'Lobster', cursive;
+    color: white;
+    font-weight: 700;
+    font-size: 70px;
+    position: relative;
+
+}
+
+.advertise-title span::before {
+    position: absolute;
+    top: 0;
+    left: 108px;
+    width: 0;
+}
+
+.advertise-title span {
+    animation: animate 2s infinite;
+
+}
+
+@keyframes animate {
+    0% {
+        color: #DD0000;
+    }
+
+    25% {
+        color: orangered;
+    }
+
+    50% {
+
+        color: white;
+    }
+
+    75% {
+        color: yellow;
+    }
+
+    100% {
+        color: green;
+    }
+}
+
+/*============== footer title with animation end */
+
+
+.advertise-detail {
+    color: white;
+    font-weight: 400;
+    font-size: 16px;
+    margin-top: 20px;
+    width: 506px;
+    height: 78px;
+}
+
+.advertise-img {
+    width: 581px;
+    height: 613px;
+}
+
+.advertise-img img {
+    width: 100%;
+    position: relative;
+    bottom: -18px;
+    right: 70px;
+}
+
+.button {
+    text-decoration: none;
+    color: white;
+    padding: 16px 25px;
+    background-color: #DD0000;
+    margin-top: 30px;
+    display: inline-block;
+    border-radius: 5px;
+    font-weight: 400;
+    font-size: 20px;
+    transition: all 0.5s ease;
+}
+
+.button:hover {
+    background-color: #7e0404;
+}
+
+/* navbar and main sec start  */
+
+.nav-container {
+    background-color: #161616;
+    width: 312px;
+    height: 312px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    border-radius: 10px;
+}
+
+
+.page {
+    margin-bottom: 50px;
+    font-weight: 500;
+    font-size: 20px;
+    border-radius: 10px;
+}
+
+.page1 a {
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    padding: 15px 35px;
+    border-radius: 10px;
+
+}
+
+.match-color {
+    background: #DD0000;
+
+
+}
+
+.match-color a {
+    background-color: #DD0000;
+    color: white;
+}
+
+.page2 a {
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    padding: 15px 75px;
+    border-radius: 10px;
+
+}
+
+.page3 a {
+    text-decoration: none;
+    color: white;
+    background-color: #DD0000;
+    padding: 15px 99px;
+    border-radius: 10px;
+
+}
+
+.blog-color a {
+    background-color: white;
+    color: #161616;
+}
+
+.page1 a:hover {
+    color: blueviolet;
+}
+
+.page2 a:hover {
+    color: blueviolet;
+}
+
+.page3 a:hover {
+    color: blueviolet;
+}
+
+/*========================== blog Start  */
+
+.blogs,
+.match-sec {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    margin-left: 24px;
+}
+
+.blog {
+    border: 1px solid rgb(232, 229, 229);
+    width: 312px;
+    height: 362px;
+    border-radius: 10px;
+}
+
+.transfar-button {
+    margin-left: 20px;
+    margin-top: 20px;
+    padding: 5px 15px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgb(167, 155, 155);
+    cursor: pointer;
+}
+
+.blog-title {
+    margin: 20px;
+    font-weight: 600;
+    font-size: 18px;
+
+}
+
+.blog-icon {
+    display: flex;
+    margin: 20px;
+}
+
+.clock-comment {
+    display: flex;
+
+}
+
+.comment {
+    margin-left: 30px;
+}
+
+.clock-comment img {
+    margin-right: 10px;
+}
+
+/* article sec done ============ */
+
+/* =============footer sec start ========== */
+
+.container {
+    background-color: #161616;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 444px;
+    margin-top: 130px;
+}
+
+/*============== footer title with animation  */
+
+.footer-title {
+    font-weight: 600;
+    font-size: 50px;
+    font-family: 'Lobster', cursive;
+    color: white;
+    position: relative;
+}
+
+.footer-title::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+}
+
+.footer-title {
+    animation: animate 5s infinite;
+}
+
+/*============== footer title with animation end */
+
+
+.container hr {
+    margin: 50px 270px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    width: 1080px;
+
+}
+
+.footer-info {
+    margin-left: 50px;
+
+}
+
+.footer-info a {
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 16px;
+    color: #B9B9B9;
+    margin-right: 60px;
+}
+
+.social-icons {
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+
+
+}
+
+.social-icon a {
+    text-decoration: none;
+    color: white;
+    padding: 0 25px;
+
+}
+
+.icon {
+    font-size: 18px;
+}
+
+/*============== matchs pages style start ==================== */
+
+
+
+.match {
+
+    border: 1px solid #B9B9B9;
+    border-radius: 5px;
+    width: 312px;
+    height: 242px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.flag-img img {
+    width: 93.04px;
+    height: 56.18px;
+
+}
+
+.vs {
+    margin: 0 21px;
+
+}
+
+.flags {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 53px;
+}
+
+.teams {
+    margin-top: 20px;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.play-time {
+    margin-top: 10px;
+    font-weight: 400;
+    font-size: 16px;
+    color: #4D4D4D;
+}
+
+/*======= media quary starts ======== */
+
+/*======== media quary for phone ========= */
+
+@media screen and (max-width: 767px) {
+    main {
+        margin: 30px 40px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .advertise-sec {
+        margin: 0;
+    }
+
+    .advertise {
+        flex-direction: column;
+        width: 334px;
+        height: 472px;
+        margin: 30px auto;
+    }
+
+    .advertise-title {
+        font-weight: 700;
+        font-size: 22px;
+        text-align: center;
+        margin: 10px auto;
+    }
+
+    .advertise-detail {
+        font-weight: 400;
+        font-size: 14px;
+        text-align: center;
+        white-space: wrap;
+        text-overflow: ellipsis;
+        width: 175px;
+        overflow: hidden;
+        height: 40px;
+
+    }
+
+    .advertise-img {
+        width: 233px;
+        height: 245px;
+    }
+
+    .advertise-img img {
+        bottom: 0px;
+        right: -15px;
+    }
+
+    .button {
+        width: 161px;
+        height: 40px;
+        font-weight: 400;
+        font-size: 20px;
+        padding: 8px 12px;
+    }
+
+    .nav-container {
+        background-color: white;
+    }
+
+    .page {
+        border: 1px solid black;
+        width: 210px;
+        height: 48px;
+        font-weight: 500;
+        font-size: 19px;
+        padding: 9px 18px;
+
+    }
+
+    .page1 a {
+        padding: 0;
+    }
+
+    .page2 a {
+        padding: 0;
+        margin-left: 35px;
+    }
+
+    .page3 a {
+        padding: 0px 79px;
+        position: relative;
+        left: -18px;
+    }
+
+
+    .blogs {
+        margin-right: 2px;
+    }
+
+    .blogs,
+    .match-sec {
+        grid-template-columns: repeat(1, 1fr);
+        margin-left: 10px;
+    }
+
+    .footer-title {
+        top: 30px;
+    }
+
+    .footer-info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-info a {
+        margin-bottom: 16px;
+    }
+
+    .container hr {
+        width: 335px;
+    }
+
+    .social-icons {
+        margin-bottom: 40px;
+        margin-top: 0;
+    }
+
+    /* media quary for index =========== */
+
+
+
+}
+
+/* media quary for matchs =========== */
+
+/*======== media quary for phone end ========= */
+
+
+/*======== media quary for tab start ========= */
+
+@media screen and (min-width:768px) and (max-width:1023px) {
+    body {
+        width: 100%;
+    }
+
+    main {
+        flex-direction: column;
+    }
+
+    .advertise-sec {
+        margin-left: 75px;
+
+    }
+
+    .advertise {
+        width: 734px;
+        height: 398px;
+        position: relative;
+        right: 208px;
+    }
+
+    .advertise-title {
+        width: 289px;
+        height: 150px;
+        font-weight: 700;
+        font-size: 40px;
+    }
+
+    .advertise-detail {
+        width: 316px;
+        height: 48px;
+        font-weight: 400;
+        font-size: 14px;
+        text-align: center;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        width: 280px;
+        overflow: hidden;
+
+    }
+
+    .button {
+        width: 161px;
+        height: 48px;
+        font-weight: 400;
+        font-size: 18px;
+        padding: 11px 18px;
+
+    }
+
+    .advertise-img img {
+        right: 10px;
+        top: 116px;
+    }
+
+    .blogs,
+    .match-sec {
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: end;
+    }
+
+    .nav-container {
+        flex-direction: row;
+        width: 834px;
+        justify-content: space-evenly;
+        height: 150px;
+        background-color: white;
+        position: relative;
+        right: 265px;
+
+    }
+
+    .page {
+        border: 1px solid black;
+        height: 64px;
+        font-weight: 500;
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .page a {
+        position: relative;
+        top: 16px;
+
+    }
+
+    .match-sec {
+        position: relative;
+        right: 45px;
+    }
+
+    .container {
+        width: 899px;
+        height: 345px;
+    }
+
+    .container hr {
+        width: 734px;
+    }
+
+    .footer-info {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        justify-items: center;
+        gap: 15px;
+    }
+
+    .last-footer-info {
+        position: relative;
+        left: 205px;
+    }
+
+    /*======== media quary for tab end ========= */

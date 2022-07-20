@@ -469,7 +469,7 @@ main {
     }
 
     .page3 a {
-        padding: 0px 79px;
+        padding: 10px 85px;
         position: relative;
         left: -18px;
     }
@@ -582,6 +582,11 @@ main {
     .groups {
         grid-template-columns: repeat(2, 1fr);
         justify-content: end;
+    }
+
+    .blogs {
+        position: relative;
+        right: 45px;
     }
 
     .nav-container {

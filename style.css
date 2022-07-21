@@ -226,6 +226,13 @@ main {
     border-radius: 10px;
 }
 
+.blog-img {
+    width: 312px;
+    height: 175px;
+    border-radius: 10px 10px 0px 0px;
+
+}
+
 .blog:hover {
     box-shadow: 6px 6px 10px gray;
 }
